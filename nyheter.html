@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT1</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="Media/code.png">
+</head>
+
+<body>
+
+    <!----NAVIGASJONSBAR----------------------------------------------------------------------------------->
+    <section>
+        <nav id="navbar">
+            <a href="index.html">
+                <h1>IT1 23/24 </h1>
+            </a>
+            <ul class="nav-linker">
+                <li class="navEL"> <a href="index.html#Prosjekter"> Prosjekter </a></li>
+                <li class="navEL"> <a href="nyheter.html"> Nyheter </a></li>
+                <li class="navEL"> <a href="quiz.html"> Quiz </a></li>
+                <li class="navEL"><a href="#Footerid">Om meg</a></li>
+            </ul>
+        </nav>
+    </section>
+
+
+    <!----FORSIDE------------------------------------------------------------------------------------------>
+    <section>
+        <div class="banner">
+            <div class="banner2-1">
+                <div class="banner2-1-1">
+                    <div class="typewriter">
+                        <h1> Dagligdagse IT nyheter </h1>
+                    </div>
+                </div>
+                <div class="banner2-1-2">
+                    <p>Ulike nyheter fra den nærmeste tiden om IT og IT-relaterte temaer. </p>
+                </div>
+            </div>
+        </div>
+
+        <!--pilsvg med scrolling til nyhet 1-->
+        <div class="transition">
+            <a href="javascript: scrollToNyhet1();">
+                <svg id="arrowBtn" width="50" height="50" fill="rgb(255,142,184)" fill-rule="evenodd"
+                    clip-rule="evenodd">
+                    <path
+                        d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm5.247 8l-5.247 6.44-5.263-6.44-.737.678 6 7.322 6-7.335-.753-.665z" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!----NYHETER----------------------------------------------------------------------------------------->
+    <section>
+        <div class="alleNyheter">
+            <div class="nyhetboks" id="Nyhet1">
+                <img src="Media/AInyhet.jpg">
+                <div class="NyhetTekst">
+                    <h2>Google om AI</h2>
+                    <p>Nå skal du ikke google framover - du skal spørre Gemini</p>
+                    <p><i>"AI vil drepe en haug nettsider framover, også norske"</i> spådde kode24 i februar 2023.</p>
+                    <a
+                        href="https://www.kode24.no/artikkel/na-skal-du-ikke-google-framover-du-skal-sporre-gemini/81405674" target="_blank">Les mer <b>her</b></a>
+                </div>
+            </div>
+
+
+
+            <!--pilsvg med scrolling til nyhet 2-->
+            <div class="transition">
+                <a href="javascript: scrollToNyhet2();">
+                    <svg id="arrowBtn" width="50" height="50" fill="rgb(255,142,184)" fill-rule="evenodd"
+                        clip-rule="evenodd">
+                        <path
+                            d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm5.247 8l-5.247 6.44-5.263-6.44-.737.678 6 7.322 6-7.335-.753-.665z" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="nyhetboks nyhetReverse" id="Nyhet2">
+                <img src="Media/dronerNyhet.jpg">
+                <div class="NyhetTekst">
+                    <h2>Droner som kan oppdage klimagasser</h2>
+                    <p>Hvordan kartlegge noe som er både usynlig og luktfritt? Ved UiO har forskere lært opp droner til selv å finne de beste stedene å måle klimagasser.</p>
+                    <p><i>"Å estimere slike gassflukser er ikke enkelt. Vi er virkelig i front med det vi gjør her"</i>, sier stipendiat Alouette van Hove ved UiOs Institutt for geofag.</p>
+                    <a
+                    href="https://www.tu.no/artikler/disse-dronene-far-belonning-for-a-laere-a-finne-klimagasser/542463" target="_blank">Les mer <b>her</b></a>
+                </div>
+            </div>
+
+
+
+            <!--pilsvg med scrolling til nyhet 3-->
+            <div class="transition">
+                <a href="javascript: scrollToNyhet3();">
+                    <svg id="arrowBtn" width="50" height="50" fill="rgb(255,142,184)" fill-rule="evenodd"
+                        clip-rule="evenodd">
+                        <path
+                            d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm5.247 8l-5.247 6.44-5.263-6.44-.737.678 6 7.322 6-7.335-.753-.665z" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="nyhetboks" id="Nyhet3">
+                <img src="Media/nyhetsformidling.jpg">
+                <div class="NyhetTekst">
+                    <h2>Framtidens nyhetsformidling</h2>
+                    <p>Mediene som lykkes i fremtiden er de som ikke bare forteller hva som skjer, men hvorfor det er viktig å fortelle om!</p>
+                    <p><i>"Åpenhet er den nye valutaen -  eller den nye oljen om du vil, og avgjørende for de bedriftene som lykkes i fremtiden"</i> skriver Eva Stenbro.</p>
+                    <a
+                    href="https://www.m24.no/eva-stenbro/mediene-som-lykkes-i-fremtiden-er-de-som-ikke-bare-forteller-hva-som-skjer-men-hvorfor-det-er-viktig-a-fortelle-om/193688?noLog=1" target="_blank">Les mer <b>her</b></a>
+                </div>
+            </div>
+
+
+
+            <!--pilsvg med scrolling til nyhet 4-->
+            <div class="transition">
+                <a href="javascript: scrollToNyhet4();">
+                    <svg id="arrowBtn" width="50" height="50" fill="rgb(255,142,184)" fill-rule="evenodd"
+                        clip-rule="evenodd">
+                        <path
+                            d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm5.247 8l-5.247 6.44-5.263-6.44-.737.678 6 7.322 6-7.335-.753-.665z" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="nyhetboks nyhetReverse" id="Nyhet4">
+                <img src="Media/nyhetApple.jpg">
+                <div class="NyhetTekst">
+                    <h2><i>"Apple endrer virkeligheten"</i></h2>
+                    <p>Apple Vision Pro er ingen VR-brille, men en <i>"romlig datamaskin"</i> som lar deg plassere digitale elementer oppå verden rundt deg.</p>
+                    <h5>Debattinnlegg fra digi.no</h5>
+                    <a
+                    href="https://www.digi.no/artikler/debatt-apple-endrer-virkeligheten/546936" target="_blank">Les mer <b>her</b></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!----FOOTER------------------------------------------------------------------------------------>
+
+
+    <footer class="footer" id="Footerid" style="margin-top: 300px;">
+        <div class="footer__boks">
+            <h1 class="footer__logo"> Om meg </h1>
+
+            <h2>Skole:</h2>
+
+            <div class="skole">
+                <p>Nadderud, Bærum </p><br>
+
+                <a class="footer__btn" href="mailto:idskor@viken.no">Email me</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

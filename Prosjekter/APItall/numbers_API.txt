@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API med tall</title>
+</head>
+
+<body>
+    <h2 id="h2API">Skriv inn et tall i input feltet under og trykk på knappen</h2>
+    <div class="APIvisning" id="prosjektAPI">
+        <div class="inputBtn">
+            <input type="number" id="tall" class="inputAPI">
+            <button id="knapp" class="knappAPI">Klikk meg!!</button>
+        </div>
+
+        <div class="APIoutput">
+            <p>Funfact:</p>
+            <a id="output">
+        </div>
+    </div>
+
+
+    <script>
+        const URL = "http://numbersapi.com/"
+
+        const outElm = document.getElementById("output")
+        const knappElm = document.getElementById("knapp")
+        const inputElm = document.getElementById("tall")
+
+        knappElm.addEventListener("click", getNumberFact)
+
+        function getNumberFact() {
+            const url = URL + inputElm.value + "?json"
+        fetch(url)
+            .then(function (response) {
+                if (!response.ok) {
+                    throw new Error("Network response was not ok")
+                }
+                return response.json()
+            })
+            .then(function (data) {
+                console.log(data)
+                    outElm.textContent = data.text
+
+            })
+            .catch((error) => {
+                console.error("Error:", error)
+            })
+        }
+    </script>
+</body>
+
+</html>

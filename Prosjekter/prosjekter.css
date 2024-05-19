@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;1,300&family=Mulish:wght@200&family=Poppins:wght@200&display=swap');
+
+body {
+    margin: 0;
+    font-family: Chakra Petch;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(43, 40, 40);
+}
+
+
+/*!NAVIGASJONSBAR---------------------------------------------------------------------------*/
+nav {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+
+}
+
+#navbar {
+    transition: 0.4s;
+    top: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.navEL a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(43, 40, 40);
+
+}
+
+.navEL:hover a {
+    color: rgb(246, 163, 229);
+    cursor: pointer;
+}
+
+.nav-linker {
+    list-style: none;
+    display: flex;
+}
+
+/*!-- ANIMATION ----------------------------------------*/
+/*-- typewriter -- src=https://css-tricks.com/snippets/css/typewriter-effect/ ----*/
+.typewriter h1 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(222, 70, 149);
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgb(222, 70, 149);
+    }
+}
+
+.typewriter {
+    width: fit-content;
+}
+
+
+/*!BANNER PROSJEKTER ------------------------------------------------------------------------*/
+.bannerPROSJEKT {
+    display: flex;
+
+    flex-direction: row;
+    padding-top: 8%;
+    padding-bottom: 200px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+.banner2-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner2-1-1 h1 {
+    font-size: 50px;
+    margin-bottom: 3%;
+}
+
+.bold {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.banner2-1-2 p {
+    font-size: 18px;
+    font-family: Poppins, sans-serif;
+    font-weight: 100;
+    margin-bottom: 4%;
+    max-width: 900px;
+}
+
+.banner2-1-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 6px;
+    font-family: Poppins, sans-serif;
+    cursor: pointer;
+    background-color: white;
+    border-color: lightgray;
+    border-width: 1px;
+    color: black;
+}
+
+
+.transition {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+#arrowBtn {
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+
+
+
+/*----PROSJEKTER---------------------------------------------------*/
+
+/*API med tall---------*/
+#prosjektAPI {
+    padding-top: 200px;
+}
+
+#h2API {
+    text-align: center;
+    font-size: 35px;
+    font-family: Poppins, sans-serif;
+}
+
+.inputAPI {
+    width: 200px;
+    height: fit-content;
+    font-size: 25px;
+    padding: 10px;
+    padding-right: 50px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: rgb(251, 189, 212);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.inputBtn {
+    flex-direction: row;
+}
+
+.APIvisning {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    align-items: center;
+}
+
+.knappAPI {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 6px;
+    border-width: 1px;
+    justify-content: center;
+}
+
+.APIoutput {
+    flex-direction: row;
+    text-align: center;
+    padding-top: 50px;
+}
+.APIoutput p {
+    font-size: 20px;
+    text-decoration: overline;
+}
+
+.viseKode {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 300px;
+}
+
+#kodeoverskrift {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 200px;
+}
+
+
+.iframe {
+    width: 900px;
+    height: 400px;
+    background-color: lightgrey;
+}
+
+
+/*Ball med gravity---------*/
+#h2gravity {
+    text-align: center;
+    font-size: 35px;
+    font-family: Poppins, sans-serif;
+}
+
+#prosjektGravity {
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+#bannerGravity {
+    padding-bottom: 300px;
+}
+
+.prosjekt_tyngdekraft {
+    border: 2px solid black;
+    width: 500px;
+    height: 500px;
+    background-color:  rgb(254, 191, 214);
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+#ball img {
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+/*Ballsprett med canvas---------*/
+#h2canvas {
+    text-align: center;
+    font-size: 35px;
+    font-family: Poppins, sans-serif;
+}
+
+#prosjektCanvas {
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 600px;
+    flex-direction: column;
+}
+
+#canvas {
+    border: 2px solid black;
+    background-color: lightpink;
+    /* Sentrere canvas */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+}
+
+.bodyCanvas #kodeoverskrift {
+    padding-top: 150px;
+}
+
+
+/*Ballsprett med canvas---------*/
+.overskriftKort {
+    text-align: center;
+    font-size: 50px;
+    text-align: center;
+}
+
+#tilfeldigkort {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tilfeldigkort img {
+    height: 500px;
+    padding-bottom: 40px;
+}
+
+
+
+
+/*!FOOTER---------------------------------------------------------------------*/
+
+.footer {
+    display: flex;
+    flex-flow: row;
+    padding: 30px 30px 20px 30px;
+    color: #2f2f2f;
+    background-color: #fff;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  .skole {
+    font-style: normal;
+    color: #999;
+  }
+
+  .footer__boks {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+  }
+
+  .footer__boks h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .footer__logo {
+    /*font-family: 'Pacifico', cursive;*/
+    font-family: Chakra Petch;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+  }
+
+  .footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: rgb(33, 33, 33, 0.07);
+    color: #2f2f2f;
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+  }

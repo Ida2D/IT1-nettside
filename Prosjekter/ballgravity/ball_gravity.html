@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball med tyngdekraft</title>
+    <link rel="stylesheet" href="../prosjekter.css">
+    <link rel="icon" href="../../Media/code.png">
+</head>
+
+<body>
+
+    <!----NAVIGASJONSBAR----------------------------------------------------------------------------------->
+    <section>
+        <nav id="navbar">
+            <a href="../../index.html">
+                <h1>IT1 23/24 </h1>
+            </a>
+            <ul class="nav-linker">
+                <li class="navEL"> <a href="../../index.html#Prosjekter"> Prosjekter </a></li>
+                <li class="navEL"> <a href="../../nyheter.html"> Nyheter </a></li>
+                <li class="navEL"> <a href=""> Quiz </a></li>
+                <li class="navEL"><a href="../../index.html#Footerid">Om meg</a></li>
+            </ul>
+        </nav>
+    </section>
+
+
+
+    <!----FORSIDE------------------------------------------------------------------------------------------>
+    <section>
+        <div class="bannerPROSJEKT" id="bannerGravity">
+            <div class="banner2-1">
+                <div class="banner2-1-1">
+                    <div class="typewriter">
+                        <h1> Ball med tyngdekraft</h1>
+                    </div>
+                </div>
+                <div class="banner2-1-2">
+                    <p>Dette prosjektet viser hvordan man kan få en ball til å "sprette" ved hjelp av å sette
+                        tyngdekraften (gravity) til negativ verdi. </p>
+                </div>
+                <div class="banner2-1-3">
+                    <a href="javascript: scrollToProsjektGravity();">
+                        <button class="btn">
+                            Prøv prosjektet
+                        </button>
+                    </a>
+                    <div style="width: 20px;"></div>
+                    <a href="javascript: scrollToCode();">
+                        <button class="btn">
+                            KODEN
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!----BALL MED GRAVITY------------------------------------------------------------------------------------>
+
+    <section id="prosjektGravity">
+        <h2 id="h2gravity">Ball med tyngdekraft:</h2>
+        <div class="prosjekt_tyngdekraft">
+            <img src="../../Media/beach-ball.png" alt="bilde av badeball" id="ball">
+        </div>
+    </section>
+
+
+    <!--pilsvg med scrolling-->
+    <div class="transition">
+        <a href="javascript: scrollToCode();">
+            <svg id="arrowBtn" width="50" height="50" fill="rgb(255,142,184)" fill-rule="evenodd" clip-rule="evenodd">
+                <path
+                    d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm5.247 8l-5.247 6.44-5.263-6.44-.737.678 6 7.322 6-7.335-.753-.665z" />
+            </svg>
+        </a>
+    </div>
+
+
+    <!--KODEN-------------------------------------------------------------------------------------------->
+    <section id="koden">
+        <p id="kodeoverskrift">Forhåndsvisning av koden:</p>
+        <div class="viseKode">
+            <iframe src="ball_gravity.txt" class="iframe"></iframe>
+        </div>
+    </section>
+
+
+    <!----FOOTER------------------------------------------------------------------------------------>
+
+    <footer class="footer" id="Footerid">
+        <div class="footer__boks">
+            <h1 class="footer__logo"> Om meg </h1>
+
+            <h2>Skole:</h2>
+
+            <div class="skole">
+                <p>Nadderud, Bærum </p><br>
+
+                <a class="footer__btn" href="mailto:idskor@viken.no">Email me</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="ball_gravity.js"></script>
+</body>
+
+</html>

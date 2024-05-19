@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tilfeldig kort</title>
+</head>
+
+<body>
+    <section id="tilfeldigkort">
+        <div class="container">
+            <h1 class="overskriftKort">Tilfeldig kort</h1>
+            <img src="kortstokk/1_of_clubs.png" alt="kort">
+        </div>
+    </section>
+
+
+    <script>
+        function tilfeldigKort() {
+        //Tilfeldig tall 1 til 13:
+        const tall = Math.floor(Math.random() * 13) + 1
+
+        //Img elementet som holder på kortet vårt:
+        const kortElm = document.querySelector(".container img")
+
+        //Endrer til en tilfeldig kløver
+        kortElm.src = "kortstokk/" + tall + "_of_clubs.png"
+
+        //Finner en tilfeldig "suit":
+        const suits = ["spades", "hearts", "clubs", "diamonds"]
+        const suit_index = Math.floor(Math.random() * 4)
+        const suit = suits[suit_index]
+
+        //Endrer til en tilfeldig KORT:
+        kortElm.src = "kortstokk/" + tall + "_of_" + suit + ".png"
+        }
+
+        //kortet skifter av seg selv hvert sekund
+        setInterval(tilfeldigKort, 1000)
+    </script>
+</body>

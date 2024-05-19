@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT1</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="Media/code.png">
+</head>
+
+<body>
+
+    <!----NAVIGASJONSBAR----------------------------------------------------------------------------------->
+    <section>
+        <nav id="navbar">
+            <a href="index.html">
+                <h1>IT1 23/24 </h1>
+            </a>
+            <ul class="nav-linker">
+                <li class="navEL"> <a href="#Prosjekter"> Prosjekter </a></li>
+                <li class="navEL"> <a href="nyheter.html"> Nyheter </a></li>
+                <li class="navEL"> <a href="quiz.html"> Quiz </a></li>
+                <li class="navEL"><a href="#Footerid">Om meg</a></li>
+            </ul>
+        </nav>
+    </section>
+
+
+    <!----FORSIDE------------------------------------------------------------------------------------------>
+    <section>
+        <div class="banner">
+            <div class="banner2-1">
+                <div class="banner2-1-1">
+                    <div class="typewriter">
+                        <h1> Alt jeg har lært i <span class="bold"> IT1</span>! </h1>
+                    </div>
+                </div>
+                <div class="banner2-1-2">
+                    <p>Nettside med pensum fra IT1 dette skoleåret. </p>
+                </div>
+                <div class="banner2-1-3">
+                    <a href="javascript: scrollToProsjekt();">
+                        <button class="btn">
+                            Prosjekter
+                        </button>
+                    </a>
+                    <div style="width: 20px;"></div>
+                    <a href="javascript: scrollToKomp_maal();">
+                        <button class="btn">
+                            Kompetansemål
+                        </button>
+                    </a>
+                    <div style="width: 20px;"></div>
+                    <a href="javascript: scrollToFooter();">
+                        <button class="btn">
+                            Om meg
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--pilsvg med scrolling-->
+        <div class="transition">
+            <a href="javascript: scrollToProsjekt();">
+                <svg id="arrowBtn" width="50" height="50" fill="rgb(255,142,184)" fill-rule="evenodd"
+                    clip-rule="evenodd">
+                    <path
+                        d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm5.247 8l-5.247 6.44-5.263-6.44-.737.678 6 7.322 6-7.335-.753-.665z" />
+                </svg>
+            </a>
+        </div>
+
+        <!--bølgesvg-->
+        <div class="svgdiv">
+            <svg class="svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="rgb(255,142,184)" fill-opacity="1"
+                    d="M0,160L48,144C96,128,192,96,288,106.7C384,117,480,171,576,160C672,149,768,75,864,58.7C960,43,1056,85,1152,112C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </section>
+
+
+    <!----PROSJEKTER------------------------------------------------------------------------------------>
+    <section style="margin-top: -1px;"> <!--Fjerner den hvite linjen under svg-->
+        <div class="prosjektdiv" id="Prosjekter">
+            <div id="prosjektoverskrift">
+                <h1> Prosjekter fra timen </h1>
+            </div>
+
+            <div id="prosjektholder">
+                <div class="prosjektboks">
+                    <a href="Prosjekter/APItall/numbers_API.html">
+                        <h3> API med tall </h3>
+                        <img class="prosjektbilde" src="Media/1.png">
+                    </a>
+                </div>
+                <div class="prosjektboks">
+                    <a href="Prosjekter/flereballer/2_canvas_ballsprett.html">
+                        <h3> Flere baller </h3>
+                        <img class="prosjektbilde" src="Media/ball.png">
+                    </a>
+                </div>
+                <div class="prosjektboks">
+                    <a href="Prosjekter/ballgravity/ball_gravity.html">
+                        <h3> Ball med tyngdekraft </h3>
+                        <img class="prosjektbilde" src="Media/beach-ball.png">
+                    </a>
+                </div>
+                <div class="prosjektboks">
+                    <a href="Prosjekter/tilfeldigkort/kortstokk.html">
+                        <h3> Tilfeldig kort </h3>
+                        <img class="prosjektbilde" src="Media/poker-game.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!----KOMPETANSEMÅL I IT1----------------------------------------------------------------------->
+    <section id="Kompetansemaal">
+        <div class="kompetansemal_os">
+            <h2>Kompetansemålene i IT1</h2>
+            <p>Fra utdanningsdirektoratet <a href="https://www.udir.no/lk20/inf01-02/kompetansemaal-og-vurdering/kv471"
+                    target="_blank" rel="noopener noreferrer"
+                    style="text-decoration: underline; color: darkblue;">UDIR</a></p>
+        </div>
+        <div class="kompetansemal_li">
+            <h4>Mål for opplæringen er at eleven skal kunne</h4>
+            <ul>
+                <li>Drøfte dagsaktuelle temaer knyttet til hvordan informasjonsteknologi påvirker individet og samfunnet
+                </li>
+                <li>Beskrive sentrale komponenter i datamaskiner og nettverk og gjøre rede for hvilken funksjon de har
+                </li>
+                <li>Gjøre rede for og vurdere hvordan ulike typer informasjon kan representeres digitalt og struktureres
+                    ved hjelp av ulike datalagringsmetoder</li>
+                <li>Utvikle nettsider ved hjelp av markeringsspråk</li>
+                <li>Lagre og hente fram data, presentere data på nettsider og reflektere over hvordan
+                    representasjonsform kan påvirke tolkningen</li>
+                <li>Planlegge og lage nettsider som tar hensyn til brukervennlighet og universell utforming</li>
+                <li>Utvikle prosedyreorienterte programmer med prosedyrer med og uten parametre og returverdier</li>
+                <li>Beskrive ulike typer algoritmer og vurdere effektiviteten av egen programkode</li>
+                <li>Utforske, strukturere og kommentere programkode</li>
+                <li>Gjøre rede for gjeldende personvernregelverk og hvilke konsekvenser det har for utvikling av
+                    informasjonsteknologi</li>
+                <li>Drøfte problemstillinger knyttet til innhenting, bruk og misbruk av data</li>
+                <li>Bruke algoritmisk tenkning og programmering for å utforske en problemstilling og presentere
+                    resultatet</li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <!----HVOR MYE HTML, CSS OG JS BRUKT-----------------------------------------------------------
+    <section>
+
+    </section>
+    -->
+
+
+
+    <!----FOOTER------------------------------------------------------------------------------------>
+
+    <footer class="footer" id="Footerid">
+        <div class="footer__boks">
+            <h1 class="footer__logo"> Om meg </h1>
+
+            <h2>Skole:</h2>
+
+            <div class="skole">
+                <p>Nadderud, Bærum </p><br>
+
+                <a class="footer__btn" href="mailto:idskor@viken.no">Email me</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
