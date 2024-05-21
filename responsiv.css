@@ -1,0 +1,89 @@
+/*!--LAGER NETTSIDEN RESPONSIV VED HJELP AV @MEDIA - 5OOPX I BREDDE ER UTGANGSPUNKTET*/
+
+
+@media (max-width: 500px) {
+    #navbar {
+        flex-direction: column;
+        text-decoration: underline;
+        padding-top: 40px;
+    }
+
+    .nav-linker {
+        flex-direction: column;
+    }
+
+    .banner {
+        padding-top: 100px;
+        padding-bottom: 60px;
+
+    }
+
+    .banner2-1 {
+        max-width: 400px;
+    }
+
+    .typewriter h1 {
+        font-size: 30px;
+    }
+
+
+
+    /*!--PROSJEKTER PÅ INDEX SIDE--*/
+    #prosjektoverskrift {
+        padding-bottom: 50px;
+        padding-top: 200px;
+    }
+
+    #prosjektholder {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prosjektdiv {
+        height: fit-content;
+    }
+
+
+    /*!--PROSENTDEL--*/
+    .prosentAndel {
+        flex-direction: column;
+    }
+
+    .prosentAndel-bar {
+        max-width: 90%;
+        padding-top: 40px;
+    }
+
+    #prosentOverskrift {
+        max-width: 90%;
+        text-align: center;
+    }
+
+
+    /*!--NYHETDEL--*/
+    .nyhetboks {
+        flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 200px;
+    }
+    #responsivNyhet {
+        padding-bottom: 250px;
+    }
+
+
+    /*!--QUIZ--*/
+    .spmdiv {
+        max-width: 500px;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+
+    /**/
+    .nav-linker {
+        padding-left: 0;
+        border-bottom: 1px solid black;
+    }
+}

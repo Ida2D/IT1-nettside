@@ -3,12 +3,12 @@ function scrollToProsjekt() {
     document.querySelector('#Prosjekter').scrollIntoView({ behavior: 'smooth' });
 }
 
-function scrollToKomp_maal() {
+function scrollToKompmaal() {
     document.querySelector('#Kompetansemaal').scrollIntoView({ behavior: 'smooth' });
 }
 
-function scrollToFooter() {
-    document.querySelector('#Footerid').scrollIntoView();
+function scrollToProsent() {
+    document.querySelector('#Prosent').scrollIntoView({ behavior: 'smooth' });
 }
 
 
@@ -33,5 +33,6 @@ function scrollToNyhet4() {
 function scrollToQuiz() {
     document.querySelector('#quiz').scrollIntoView({ behavior: 'smooth' });
 }
+
 
 
